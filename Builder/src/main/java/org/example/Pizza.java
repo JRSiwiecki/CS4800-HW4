@@ -2,8 +2,22 @@ package org.example;
 
 public class Pizza
 {
-    private String chain;
-    private String size;
+    // To prevent creating pizzas from chains we don't own
+    public enum PizzaChain {
+        PIZZA_HUT,
+        LITTLE_CAESARS,
+        DOMINOES
+    }
+
+    // To prevent creating pizzas for sizes we don't sell
+    public enum PizzaSize {
+        SMALL,
+        MEDIUM,
+        LARGE
+    }
+
+    private PizzaChain chain;
+    private PizzaSize size;
     private boolean pepperoni;
     private boolean sausage;
     private boolean mushrooms;
@@ -21,7 +35,7 @@ public class Pizza
     private boolean spicyPork;
     private boolean hamAndPineapple;
 
-    public Pizza(String chain, String size, boolean pepperoni, boolean sausage, boolean mushrooms, boolean bacon, boolean onions, boolean extraCheese, boolean peppers, boolean chicken, boolean olives, boolean spinach, boolean tomatoAndBasil, boolean beef, boolean ham, boolean pesto, boolean spicyPork, boolean hamAndPineapple)
+    public Pizza(PizzaChain chain, PizzaSize size, boolean pepperoni, boolean sausage, boolean mushrooms, boolean bacon, boolean onions, boolean extraCheese, boolean peppers, boolean chicken, boolean olives, boolean spinach, boolean tomatoAndBasil, boolean beef, boolean ham, boolean pesto, boolean spicyPork, boolean hamAndPineapple)
     {
         this.chain = chain;
         this.size = size;

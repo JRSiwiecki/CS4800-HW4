@@ -2,8 +2,8 @@ package org.example;
 
 public class PizzaBuilder
 {
-    private String chain;
-    private String size;
+    private Pizza.PizzaChain chain;
+    private Pizza.PizzaSize size;
     private boolean pepperoni;
     private boolean sausage;
     private boolean mushrooms;
@@ -23,13 +23,13 @@ public class PizzaBuilder
 
     public PizzaBuilder() { }
 
-    public PizzaBuilder setChain(String chain)
+    public PizzaBuilder setChain(Pizza.PizzaChain chain)
     {
         this.chain = chain;
         return this;
     }
 
-    public PizzaBuilder setSize(String size)
+    public PizzaBuilder setSize(Pizza.PizzaSize size)
     {
         this.size = size;
         return this;
