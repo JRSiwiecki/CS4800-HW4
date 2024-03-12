@@ -103,9 +103,15 @@ public class Main
                 .bakePizza();
         pizza9.eat();
 
-        // Check to make sure pizzas can't be made without a size,
+        // Check to make sure pizzas can't be made without a chain,
         // will throw runtime exception
         Pizza pizza10 = new PizzaBuilder()
+                .bakePizza();
+
+        // Check to make sure pizzas can't be made without a size,
+        // will throw runtime exception
+        Pizza pizza11 = new PizzaBuilder()
+                .setChain(Pizza.PizzaChain.DOMINOES)
                 .bakePizza();
 
     }

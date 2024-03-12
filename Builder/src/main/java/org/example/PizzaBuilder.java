@@ -133,6 +133,11 @@ public class PizzaBuilder
 
     public Pizza bakePizza()
     {
+        if (this.chain == null)
+        {
+            throw new RuntimeException("Pizza chain must be set to Pizza Hut, Little Caesars, or Dominos.");
+        }
+
         if (this.size == null)
         {
             throw new RuntimeException("Pizza size must be set to either small, medium, or large.");
