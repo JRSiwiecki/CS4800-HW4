@@ -133,6 +133,11 @@ public class PizzaBuilder
 
     public Pizza bakePizza()
     {
+        if (this.size == null)
+        {
+            throw new RuntimeException("Pizza size must be set to either small, medium, or large.");
+        }
+
         return new Pizza(chain, size, pepperoni, sausage, mushrooms, bacon, onions,
                 extraCheese, peppers, chicken, olives, spinach, tomatoAndBasil,
                 beef, ham, pesto, spicyPork, hamAndPineapple);

@@ -103,5 +103,10 @@ public class Main
                 .bakePizza();
         pizza9.eat();
 
+        // Check to make sure pizzas can't be made without a size,
+        // will throw runtime exception
+        Pizza pizza10 = new PizzaBuilder()
+                .bakePizza();
+
     }
 }
