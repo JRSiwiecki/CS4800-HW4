@@ -2,6 +2,7 @@ package org.example;
 
 public class Customer
 {
+
     private String name;
     private String dietPlan;
     private Meal meal;
@@ -45,6 +46,6 @@ public class Customer
     @Override
     public String toString()
     {
-        return "[" + name + " " + meal.toString() + "]";
+        return "[" + name + " - " + dietPlan + " " + meal.toString() + "]";
     }
 }
