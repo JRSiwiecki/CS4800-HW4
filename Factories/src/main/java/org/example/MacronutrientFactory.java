@@ -1,6 +1,6 @@
 package org.example;
 
-public class MacronutrientFactory
+public final class MacronutrientFactory
 {
     private static MacronutrientFactory instance;
 
