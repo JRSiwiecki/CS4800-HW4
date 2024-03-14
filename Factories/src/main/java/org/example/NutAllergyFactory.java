@@ -4,7 +4,9 @@ public final class NutAllergyFactory extends MacronutrientFactory
 {
     private static NutAllergyFactory instance;
 
-    private NutAllergyFactory() {}
+    private NutAllergyFactory()
+    {
+    }
 
     public static NutAllergyFactory getInstance()
     {

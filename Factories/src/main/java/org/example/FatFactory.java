@@ -4,7 +4,9 @@ public final class FatFactory
 {
     private static FatFactory instance;
 
-    private FatFactory(){ }
+    private FatFactory()
+    {
+    }
 
     public static FatFactory getInstance()
     {

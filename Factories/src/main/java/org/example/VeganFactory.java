@@ -4,7 +4,9 @@ public final class VeganFactory extends MacronutrientFactory
 {
     private static VeganFactory instance;
 
-    private VeganFactory() {}
+    private VeganFactory()
+    {
+    }
 
     public static VeganFactory getInstance()
     {

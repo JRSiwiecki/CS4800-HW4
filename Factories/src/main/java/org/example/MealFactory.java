@@ -1,16 +1,18 @@
 package org.example;
 
-public final class FactoryCreator
+public final class MealFactory
 {
-    private static FactoryCreator instance;
+    private static MealFactory instance;
 
-    private FactoryCreator() {}
+    private MealFactory()
+    {
+    }
 
-    public static FactoryCreator getInstance()
+    public static MealFactory getInstance()
     {
         if (instance == null)
         {
-            instance = new FactoryCreator();
+            instance = new MealFactory();
         }
 
         return instance;
