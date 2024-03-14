@@ -18,7 +18,6 @@ public final class CarbFactory
 
     public Carb getCarb(String dietPlan)
     {
-        CarbFactory carbFactory = CarbFactory.getInstance();
         String[] carbOptions;
 
         switch (dietPlan)

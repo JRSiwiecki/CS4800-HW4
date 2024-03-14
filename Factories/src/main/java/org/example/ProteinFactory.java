@@ -18,7 +18,6 @@ public final class ProteinFactory
 
     public Protein getProtein(String dietPlan)
     {
-        ProteinFactory carbFactory = ProteinFactory.getInstance();
         String[] proteinOptions;
 
         switch (dietPlan)
