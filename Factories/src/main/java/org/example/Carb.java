@@ -2,9 +2,26 @@ package org.example;
 
 public class Carb extends CarbProduct
 {
-    @Override
-    CarbProduct makeCarb()
+    private String name;
+
+    public Carb(String name)
     {
-        return new Carb();
+        this.name = name;
+    }
+
+    public String getName()
+    {
+        return name;
+    }
+
+    public void setName(String name)
+    {
+        this.name = name;
+    }
+
+    @Override
+    CarbProduct makeCarb(String name)
+    {
+        return new Carb(name);
     }
 }
