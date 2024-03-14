@@ -4,7 +4,9 @@ public final class CarbFactory
 {
     private static CarbFactory instance;
 
-    private CarbFactory(){ }
+    private CarbFactory()
+    {
+    }
 
     public static CarbFactory getInstance()
     {

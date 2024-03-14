@@ -4,7 +4,9 @@ public final class NoRestrictionFactory extends MacronutrientFactory
 {
     private static NoRestrictionFactory instance;
 
-    private NoRestrictionFactory() {}
+    private NoRestrictionFactory()
+    {
+    }
 
     public static NoRestrictionFactory getInstance()
     {

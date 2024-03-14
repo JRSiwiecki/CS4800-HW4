@@ -4,7 +4,9 @@ public final class FactoryCreator
 {
     private static FactoryCreator instance;
 
-    private FactoryCreator() {}
+    private FactoryCreator()
+    {
+    }
 
     public static FactoryCreator getInstance()
     {

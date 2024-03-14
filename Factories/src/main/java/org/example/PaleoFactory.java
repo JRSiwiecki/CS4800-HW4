@@ -4,7 +4,9 @@ public final class PaleoFactory extends MacronutrientFactory
 {
     private static PaleoFactory instance;
 
-    private PaleoFactory() {}
+    private PaleoFactory()
+    {
+    }
 
     public static PaleoFactory getInstance()
     {

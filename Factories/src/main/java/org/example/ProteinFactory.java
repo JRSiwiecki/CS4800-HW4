@@ -4,7 +4,9 @@ public final class ProteinFactory
 {
     private static ProteinFactory instance;
 
-    private ProteinFactory(){ }
+    private ProteinFactory()
+    {
+    }
 
     public static ProteinFactory getInstance()
     {
