@@ -35,4 +35,10 @@ public class Meal
     {
         this.fat = fat;
     }
+
+    @Override
+    public String toString()
+    {
+        return "{" + carb.getName() + ", " + protein.getName() + ", " + fat.getName() + "}";
+    }
 }

@@ -41,4 +41,10 @@ public class Customer
     {
         this.meal = meal;
     }
+
+    @Override
+    public String toString()
+    {
+        return "[" + name + " " + meal.toString() + "]";
+    }
 }

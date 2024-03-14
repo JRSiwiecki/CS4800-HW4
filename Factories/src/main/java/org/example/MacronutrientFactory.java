@@ -2,11 +2,11 @@ package org.example;
 
 public class MacronutrientFactory
 {
-    private MacronutrientFactory instance;
+    private static MacronutrientFactory instance;
 
     private MacronutrientFactory() { }
 
-    public MacronutrientFactory getInstance()
+    public static MacronutrientFactory getInstance()
     {
         if (instance == null)
         {
